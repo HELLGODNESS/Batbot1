@@ -8,7 +8,7 @@ WORKDIR /BotsApp
 
 RUN git init --initial-branch=main
 
-RUN git remote add origin git@github.com:HELLGODNESS/Batbot2.git
+RUN git remote add origin git@github.com:HELLGODNESS/Batbot1.git
 
 
 RUN git reset --hard origin/main
