@@ -8,7 +8,8 @@ WORKDIR /BotsApp
 
 RUN git init --initial-branch=main
 
-RUN git remote add origin git@github.com:HELLGODNESS/Batbotwh.git
+RUN git remote add origin https://{HELLGODNESS}:{Porcaputt123}@github.com/{HELLGODNESS}/Batbotwh.git
+
 
 RUN git fetch origin main
 
