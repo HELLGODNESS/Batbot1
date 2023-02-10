@@ -6,10 +6,13 @@ COPY . /BotsApp
 
 WORKDIR /BotsApp
 
-RUN git init --initial-branch=main
+RUN git init --initial-branch=multi-device
 
-RUN git remote add origin git@github.com:HELLGODNESS/Batbot2.0.git
+RUN git remote add origin https://github.com/Prince-Mendiratta/BotsApp.git
 
+RUN git fetch origin multi-device
+
+RUN git reset --hard origin/multi-device
 
 RUN yarn
 
