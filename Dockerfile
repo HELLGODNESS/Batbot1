@@ -8,11 +8,11 @@ WORKDIR /Batbot1.0
 
 RUN git init --initial-branch=main
 
-RUN git remote add origin git@github.com:HELLGODNESS/Batbot1.1.git
+RUN git remote add origin https://github.com/HELLGODNESS/Batbot1.2.git
 
-RUN git fetch origin multi-device
+RUN git fetch origin main
 
-RUN git reset --hard origin/multi-device
+RUN git reset --hard origin/main
 
 RUN yarn
 
