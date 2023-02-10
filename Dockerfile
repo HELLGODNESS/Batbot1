@@ -2,17 +2,17 @@ FROM princemendiratta/botsapp:latest
 
 WORKDIR /
 
-COPY . /BotsApp
+COPY . /Batbot1.0
 
-WORKDIR /BotsApp
+WORKDIR /Batbot1.0
 
-RUN git init --initial-branch=multi-device
+RUN git init --initial-branch=main
 
 RUN git remote add origin https://github.com/Prince-Mendiratta/BotsApp.git
 
-RUN git fetch origin multi-device
+RUN git fetch origin main
 
-RUN git reset --hard origin/multi-device
+RUN git reset --hard origin/main
 
 RUN yarn
 
